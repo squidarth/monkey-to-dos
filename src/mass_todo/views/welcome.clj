@@ -9,3 +9,7 @@
 (defpage "/welcome" []
          (common/layout
            [:p "Welcome to mass-todo"]))
+
+(defpage "/login" []
+         (common/layout/login
+           [:p "Log in"]))
