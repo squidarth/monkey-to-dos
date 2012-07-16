@@ -9,7 +9,7 @@
            [:p "Welcome to mass-todo"]))
 
 (defpage "/login" []
-         (common/layout/login
+         (common/login
            [:p "Log in"]))
 
 (server/start 8080)

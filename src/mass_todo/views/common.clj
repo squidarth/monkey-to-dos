@@ -11,7 +11,7 @@
                [:div#wrapper
                 content]]))
 
-(defpartial layout/login [& content]
+(defpartial login [& content]
     (html5
       [:head
         [:title "Log in"]
