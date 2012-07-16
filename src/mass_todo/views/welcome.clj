@@ -11,5 +11,3 @@
 (defpage "/login" []
          (common/login
            [:p "Log in"]))
-
-(server/start 8080)
