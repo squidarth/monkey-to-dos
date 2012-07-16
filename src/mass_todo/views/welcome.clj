@@ -16,7 +16,8 @@
          (common/lists))
 
 (defpage "/auth/facebook" []
-         (handleFacebookOauth []))
+         (handleFacebookOauth [])
+         (render "/lists")
 
 (defpage "/lists/add" {:as list}
   (layout
@@ -25,6 +26,3 @@
 
 (defpage [:post "/lists"] []
          (render "/lists"))
-
-(defun handleFacebookOauth []
-   ("john"))
