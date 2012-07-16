@@ -11,11 +11,11 @@
                [:div#wrapper
                 content]]))
 
-(defpartial login [& content]
-    (html5
-      [:head
-        [:title "Log in"]
-        (include-css "/css/main.css")]
-      [:body
-        [:div#wrapper
-          content]]))
+(defpartial login []
+    (layout [:div#login 
+               [:h4 "Log in"]]))
+
+(defpartial lists []
+  (layout [:ul 
+             [:li "Hello"]
+             [:li "bobl"]]))
