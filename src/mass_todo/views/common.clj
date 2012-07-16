@@ -10,3 +10,12 @@
               [:body
                [:div#wrapper
                 content]]))
+
+(defpartial layout/login [& content]
+    (html5
+      [:head
+        [:title "Log in"]
+        (include-css "/css/main.css")]
+      [:body
+        [:div#wrapper
+          content]]))

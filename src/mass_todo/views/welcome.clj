@@ -2,9 +2,7 @@
   (:require [mass-todo.views.common :as common]
             [noir.content.getting-started])
   (:use [noir.core :only [defpage]]
-        [hiccup.core :only [html]])
-  (:use somnium.congomongo)
-  (:use [:somnium.congomongo.config :only [*mongo-config*]]))
+        [hiccup.core :only [html]]))
 
 (defpage "/welcome" []
          (common/layout
@@ -13,3 +11,5 @@
 (defpage "/login" []
          (common/layout/login
            [:p "Log in"]))
+
+(server/start 8080)
